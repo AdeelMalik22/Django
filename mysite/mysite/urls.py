@@ -20,9 +20,10 @@ from course import views as vf
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('ur/',include([
+    path('',include([
         path('learn/',vf.index),
-        path('earn/',vf.new_pro),])),
+        path('earn/',vf.new_pro),
+        path('waj/',vf.wajdan,),])),
     path("",include('polls.urls')),
     # path('index/',views.index),
     # path('function/',views.function),

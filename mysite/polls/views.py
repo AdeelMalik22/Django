@@ -1,12 +1,13 @@
 from django.shortcuts import render
+import datetime
 from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+    return render(request,'polls/index.html',{'pt':56.444,'py':569.33})
 
-# def function(request):
-#     return HttpResponse("HI there")
+def function(request):
+    return HttpResponse("HI there d")
 
 # def add_new(request):
 #     return HttpResponse("HEY HOW'S DOING")
