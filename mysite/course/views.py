@@ -5,7 +5,8 @@ def new_pro(request):
     return HttpResponse("HI i am an other app")
 
 def index(request):
-    return render(request,'course/index.html',{'nm':True})
+
+    return render(request,'course/index.html',{'name':'adeel','city':'ape '})
 
 def wajdan(request):
     return render(request,'course/wajdan.html')
